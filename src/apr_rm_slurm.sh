@@ -1,15 +1,15 @@
 #!/bin/bash
 
-#SBATCH --partition=gpuq                    # need to set 'gpuq' or 'contrib-gpuq'  partition
-#SBATCH --qos=gpu                          # need to select 'gpu' QOS or other relvant QOS
-#SBATCH --job-name=apr_rm
-#SBATCH --output=/scratch/%u/%x-%N-%j.out  # Output file
-#SBATCH --error=/scratch/%u/%x-%N-%j.err   # Error file
-#SBATCH --nodes=1
-#SBATCH --gres=gpu:A100.80gb:4               # up to 8; only request what you need
-#SBATCH --mem=200G
-#SBATCH --export=ALL
-#SBATCH --time=2-00:00:00                   # set to 2hr; please choose carefully
+SBATCH --partition=gpuq                    # need to set 'gpuq' or 'contrib-gpuq'  partition
+SBATCH --qos=gpu                          # need to select 'gpu' QOS or other relvant QOS
+SBATCH --job-name=apr_rm
+SBATCH --output=/scratch/%u/%x-%N-%j.out  # Output file
+SBATCH --error=/scratch/%u/%x-%N-%j.err   # Error file
+SBATCH --nodes=1
+SBATCH --gres=gpu:A100.80gb:4               # up to 8; only request what you need
+SBATCH --mem=200G
+SBATCH --export=ALL
+SBATCH --time=2-00:00:00                   # set to 2hr; please choose carefully
 
 set echo
 umask 0022
@@ -22,8 +22,6 @@ conda activate llama_factory
 OUTPUT='/projects/ksun3/dwu25/trained_models/apr_rm/'
 
 echo "start"
-
-python test.py
 
 echo $OUTPUT
 
