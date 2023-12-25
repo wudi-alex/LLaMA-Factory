@@ -22,6 +22,9 @@ nvidia-smi
 module load gnu10
 module load python
 
+source 	~/Anaconda/etc/profile.d/conda.sh
+conda activate llama_factory
+
 accelerate launch --config_file accelerate_ds_config.yaml train_bash.py \
     --stage rm \
     --do_train \
