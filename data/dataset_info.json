@@ -301,8 +301,8 @@
     "folder": "python"
   },
   "apr_rm": {
+    "file_name": "apr_rm_train.json",
     "columns": {
-      "file_name": "apr_rm_train.json",
       "prompt": "instruction",
       "query": "input",
       "response": "output",
