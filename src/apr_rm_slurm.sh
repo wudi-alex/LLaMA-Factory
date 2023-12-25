@@ -21,6 +21,8 @@ conda activate llama_factory
 
 OUTPUT='/projects/ksun3/dwu25/trained_models/apr_rm/'
 
+echo "start"
+
 ~/Anaconda/envs/llama_factory/bin/accelerate launch --config_file accelerate_ds_config.yaml train_bash.py \
     --stage rm \
     --do_train \
