@@ -24,7 +24,7 @@ conda activate llama_factory
 
 OUTPUT='/projects/ksun3/dwu25/trained_models/apr_rm/'
 
-echo $OUTPUT
+echo "start"
 
 accelerate launch --config_file accelerate_ds_config.yaml train_bash.py \
     --stage rm \
@@ -46,4 +46,3 @@ accelerate launch --config_file accelerate_ds_config.yaml train_bash.py \
     --num_train_epochs 5.0 \
     --plot_loss \
     --quantization_bit 4 \
-    &> $OUTPUT/training.log
