@@ -42,7 +42,7 @@ accelerate launch --config_file accelerate_ds_config.yaml train_bash.py \
     --lr_scheduler_type cosine \
     --logging_steps 10 \
     --save_steps 1000 \
-    --learning_rate 1e-6 \
+    --learning_rate 9e-6 \
     --num_train_epochs 5.0 \
     --plot_loss \
     --quantization_bit 4 \
