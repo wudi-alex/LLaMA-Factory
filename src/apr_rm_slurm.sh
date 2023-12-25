@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#SBATCH --account=dwu25
 #SBATCH --partition=gpuq                    # need to set 'gpuq' or 'contrib-gpuq'  partition
 #SBATCH --qos=gpu                          # need to select 'gpu' QOS or other relvant QOS
 #SBATCH --job-name=apr_rm
