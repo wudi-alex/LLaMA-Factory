@@ -12,7 +12,7 @@ accelerate launch --config_file accelerate_config.yaml train_bash.py \
     --lora_target q_proj,v_proj \
     --lora_rank 32 \
     --output_dir $OUTPUT/output \
-    --per_device_train_batch_size 64 \
+    --per_device_train_batch_size 32 \
     --gradient_accumulation_steps 1 \
     --lr_scheduler_type cosine \
     --logging_steps 10 \
