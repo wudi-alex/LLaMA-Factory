@@ -35,9 +35,9 @@ accelerate launch --config_file accelerate_ds_config.yaml train_bash.py \
     --template default \
     --finetuning_type lora \
     --lora_target q_proj,v_proj \
-    --lora_rank 32 \
+    --lora_rank 16 \
     --output_dir $OUTPUT/output \
-    --per_device_train_batch_size 64 \
+    --per_device_train_batch_size 32 \
     --gradient_accumulation_steps 1 \
     --lr_scheduler_type cosine \
     --logging_steps 10 \
