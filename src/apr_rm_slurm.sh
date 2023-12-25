@@ -2,13 +2,13 @@
 #SBATCH --partition=gpuq
 #SBATCH --qos=gpu
 #SBATCH --job-name=apr_rm
-#SBATCH --output=/scratch/%u/%x-%N-%j.out
-#SBATCH --error=/scratch/%u/%x-%N-%j.err
+#SBATCH --output=/projects/ksun3/%u/sbatch_log/%x-%N-%j.out
+#SBATCH --error=/projects/ksun3/%u/sbatch_log/%x-%N-%j.err
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:A100.80gb:4
-#SBATCH --mem=200G
+#SBATCH --mem=480G
 #SBATCH --export=ALL
-#SBATCH --time=0-02:00:00
+#SBATCH --time=2-00:00:00
 
 set echo
 umask 0022
