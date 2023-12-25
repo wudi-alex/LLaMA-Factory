@@ -7,9 +7,9 @@
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:A100.80gb:4
 #SBATCH --ntasks-per-node=20
-#SBATCH --mem-per-cpu=4000M
+#SBATCH --mem-per-cpu=1000M
 #SBATCH --export=ALL
-#SBATCH --time=2-00:00:00
+#SBATCH --time=0-02:00:00
 
 set echo
 umask 0022
