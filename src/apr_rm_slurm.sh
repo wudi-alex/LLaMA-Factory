@@ -15,16 +15,13 @@ set echo
 umask 0022
 
 module load gnu10
-echo "load env"
 
 source 	~/Anaconda/etc/profile.d/conda.sh
 conda activate llama_factory
 
 OUTPUT='/projects/ksun3/dwu25/trained_models/apr_rm/'
 
-echo "start"
-
-accelerate launch --config_file accelerate_ds_config.yaml train_bash.py \
+~/Anaconda/envs/llama_factory/bin/accelerate launch --config_file accelerate_ds_config.yaml train_bash.py \
     --stage rm \
     --do_train \
     --model_name_or_path codellama/CodeLlama-7b-hf \
