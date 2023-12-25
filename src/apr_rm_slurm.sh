@@ -10,7 +10,7 @@
 #SBATCH --gres=gpu:A100.80gb:4               # up to 8; only request what you need
 #SBATCH --mem-per-cpu=2000M                 # memory per CORE; total memory is 1 TB (1,000,000 MB)
 #SBATCH --export=ALL
-#SBATCH --time=3-00:00:00                   # set to 2hr; please choose carefully
+#SBATCH --time=0-02:00:00                   # set to 2hr; please choose carefully
 
 source 	~/Anaconda/etc/profile.d/conda.sh
 conda activate llama_factory
