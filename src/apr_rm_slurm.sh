@@ -7,7 +7,8 @@
 #SBATCH --error=/projects/ksun3/dwu25/sbatch_log/apr_rm/%x-%N-%j.err    # Error file
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:A100.80gb:4               # up to 8; only request what you need
-#SBATCH --mem=200G
+#SBATCH --cpus-per-task=20                   # up to 48 per node
+#SBATCH --mem-per-cpu=1000M
 #SBATCH --export=ALL
 #SBATCH --time=2-00:00:00                   # set to 2hr; please choose carefully
 
