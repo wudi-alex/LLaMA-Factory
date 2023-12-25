@@ -3,12 +3,11 @@
 #SBATCH --partition=gpuq                    # need to set 'gpuq' or 'contrib-gpuq'  partition
 #SBATCH --qos=gpu                          # need to select 'gpu' QOS or other relvant QOS
 #SBATCH --job-name=apr_rm
-#SBATCH --output=/projects/ksun3/dwu25/sbatch_log/apr_rm/%x-%N-%j.out   # Output file
-#SBATCH --error=/projects/ksun3/dwu25/sbatch_log/apr_rm/%x-%N-%j.err    # Error file
+#SBATCH --output=/scratch/%u/%x-%N-%j.out  # Output file
+#SBATCH --error=/scratch/%u/%x-%N-%j.err   # Error file
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:A100.80gb:4               # up to 8; only request what you need
-#SBATCH --cpus-per-task=20                   # up to 48 per node
-#SBATCH --mem-per-cpu=1000M
+#SBATCH --mem=200G
 #SBATCH --export=ALL
 #SBATCH --time=2-00:00:00                   # set to 2hr; please choose carefully
 
