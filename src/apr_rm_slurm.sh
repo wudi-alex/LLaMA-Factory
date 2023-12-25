@@ -1,18 +1,20 @@
 #!/bin/bash
-
-#SBATCH --partition=contrib-gpuq                    # need to set 'gpuq' or 'contrib-gpuq'  partition
-#SBATCH --qos=ksun3                          # need to select 'gpu' QOS or other relvant QOS
+#SBATCH --partition=gpuq
+#SBATCH --qos=gpu
 #SBATCH --job-name=apr_rm
-#SBATCH --output=/scratch/%u/%x-%N-%j.out  # Output file
-#SBATCH --error=/scratch/%u/%x-%N-%j.err   # Error file
+#SBATCH --output=/scratch/%u/%x-%N-%j.out
+#SBATCH --error=/scratch/%u/%x-%N-%j.err
 #SBATCH --nodes=1
-#SBATCH --gres=gpu:A100.80gb:4               # up to 8; only request what you need
+#SBATCH --gres=gpu:A100.80gb:4
 #SBATCH --mem=200G
 #SBATCH --export=ALL
-#SBATCH --time=2-00:00:00                   # set to 2hr; please choose carefully
+#SBATCH --time=0-02:00:00
 
 set echo
 umask 0022
+
+# to see ID and state of GPUs assigned
+nvidia-smi
 
 module load gnu10
 
