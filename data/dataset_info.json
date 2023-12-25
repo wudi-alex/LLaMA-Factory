@@ -306,8 +306,8 @@
       "prompt": "instruction",
       "query": "input",
       "response": "output",
-      "system": "system",
       "history": "history"
-    }
+    },
+    "ranking": true
   }
 }
