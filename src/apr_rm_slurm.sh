@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #SBATCH --partition=gpuq                    # need to set 'gpuq' or 'contrib-gpuq'  partition
+#SBATCH --qos=gpu                          # need to select 'gpu' QOS or other relvant QOS
 #SBATCH --job-name=apr_rm
 #SBATCH --output=/projects/ksun3/dwu25/sbatch_log/apr_rm/%x-%N-%j.out   # Output file
 #SBATCH --error=/projects/ksun3/dwu25/sbatch_log/apr_rm/%x-%N-%j.err    # Error file
