@@ -11,6 +11,9 @@
 #SBATCH --export=ALL
 #SBATCH --time=2-00:00:00                   # set to 2hr; please choose carefully
 
+set echo
+umask 0022
+
 module load gnu10
 echo "load env"
 
