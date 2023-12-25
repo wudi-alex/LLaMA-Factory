@@ -9,7 +9,7 @@
 #SBATCH --ntasks-per-node=20
 #SBATCH --mem=200G
 #SBATCH --export=ALL
-#SBATCH --time=0-02:00:00
+#SBATCH --time=2-00:00:00
 
 set echo
 umask 0022
