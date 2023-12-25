@@ -6,9 +6,9 @@
 #SBATCH --output=/projects/ksun3/dwu25/sbatch_log/apr_rm/%x-%N-%j.out   # Output file
 #SBATCH --error=/projects/ksun3/dwu25/sbatch_log/apr_rm/%x-%N-%j.err    # Error file
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=25                 # number of cores needed
+#SBATCH --ntasks-per-node=40                 # number of cores needed
 #SBATCH --gres=gpu:A100.80gb:4               # up to 8; only request what you need
-#SBATCH --mem-per-cpu=4000M                 # memory per CORE; total memory is 1 TB (1,000,000 MB)
+#SBATCH --mem-per-cpu=2000M                 # memory per CORE; total memory is 1 TB (1,000,000 MB)
 #SBATCH --export=ALL
 #SBATCH --time=3-00:00:00                   # set to 2hr; please choose carefully
 
