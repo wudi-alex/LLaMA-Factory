@@ -11,6 +11,10 @@
 #SBATCH --export=ALL
 #SBATCH --time=2-00:00:00                   # set to 2hr; please choose carefully
 
+# to see ID and state of GPUs assigned
+nvidia-smi
+
+module load gnu10
 source 	~/Anaconda/etc/profile.d/conda.sh
 conda activate llama_factory
 
