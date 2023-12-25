@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --partition=gpuq
-#SBATCH --qos=gpu
+#SBATCH --partition=contrib-gpuq
+#SBATCH --qos=ksun
 #SBATCH --job-name=apr_rm
 #SBATCH --output=/projects/ksun3/%u/sbatch_log/%x-%N-%j.out
 #SBATCH --error=/projects/ksun3/%u/sbatch_log/%x-%N-%j.err
