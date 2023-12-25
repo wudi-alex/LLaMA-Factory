@@ -302,6 +302,7 @@
   },
   "apr_rm": {
     "columns": {
+      "file_name": "apr_rm_train.json",
       "prompt": "instruction",
       "query": "input",
       "response": "output",
