@@ -7,7 +7,6 @@ accelerate launch --config_file accelerate_config.yaml train_bash.py \
     --do_train \
     --model_name_or_path codellama/CodeLlama-7b-hf \
     --adapter_name_or_path $OUTPUT \
-    --create_new_adapter \
     --dataset apr_rm \
     --dataset_dir /projects/ksun3/dwu25/apr_datasets_processing/coconut/data \
     --template default \
