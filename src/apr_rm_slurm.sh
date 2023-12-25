@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #SBATCH --partition=gpuq                    # need to set 'gpuq' or 'contrib-gpuq'  partition
-#SBATCH --qos=gpu                          # need to select 'gpu' QOS or other relvant QOS
 #SBATCH --job-name=apr_rm
 #SBATCH --output=/projects/ksun3/dwu25/sbatch_log/apr_rm/%x-%N-%j.out   # Output file
 #SBATCH --error=/projects/ksun3/dwu25/sbatch_log/apr_rm/%x-%N-%j.err    # Error file
@@ -10,7 +9,7 @@
 #SBATCH --gres=gpu:A100.80gb:4               # up to 8; only request what you need
 #SBATCH --mem-per-cpu=2000M                 # memory per CORE; total memory is 1 TB (1,000,000 MB)
 #SBATCH --export=ALL
-#SBATCH --time=0-02:00:00                   # set to 2hr; please choose carefully
+#SBATCH --time=2-00:00:00                   # set to 2hr; please choose carefully
 
 source 	~/Anaconda/etc/profile.d/conda.sh
 conda activate llama_factory
