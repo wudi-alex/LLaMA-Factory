@@ -1,5 +1,5 @@
 #!/bin/bash
-OUTPUT = /projects/ksun3/dwu25/trained_models/apr_rm/
+OUTPUT='/projects/ksun3/dwu25/trained_models/apr_rm/'
 mkdir -p $OUTPUT
 
 accelerate launch --config_file accelerate_config.yaml train_bash.py \
