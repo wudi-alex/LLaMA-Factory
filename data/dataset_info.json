@@ -299,5 +299,14 @@
       "prompt": "content"
     },
     "folder": "python"
+  },
+  "apr_rm": {
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system",
+      "history": "history"
+    }
   }
 }
