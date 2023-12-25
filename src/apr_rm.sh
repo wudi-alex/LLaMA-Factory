@@ -1,7 +1,7 @@
 #!/bin/bash
 OUTPUT='/projects/ksun3/dwu25/trained_models/apr_rm/'
 
-accelerate launch --config_file accelerate_config.yaml train_bash.py \
+accelerate launch --config_file accelerate_ds_config.yaml train_bash.py \
     --stage rm \
     --do_train \
     --model_name_or_path codellama/CodeLlama-7b-hf \
