@@ -15,8 +15,8 @@
 nvidia-smi
 
 module load gnu10
-source 	~/Anaconda/etc/profile.d/conda.sh
-conda activate llama_factory
+#source 	~/Anaconda/etc/profile.d/conda.sh
+#conda activate llama_factory
 
 OUTPUT='/projects/ksun3/dwu25/trained_models/apr_rm/'
 
