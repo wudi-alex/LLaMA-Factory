@@ -6,7 +6,8 @@
 #SBATCH --error=/projects/ksun3/%u/sbatch_log/%x-%N-%j.err
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:A100.80gb:4
-#SBATCH --mem=480G
+#SBATCH --ntasks-per-node=20
+#SBATCH --mem-per-cpu=4000M
 #SBATCH --export=ALL
 #SBATCH --time=2-00:00:00
 
