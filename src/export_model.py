@@ -1,6 +1,6 @@
 import os
 
-os.environ['TRANSFORMERS_CACHE'] = '/datasets/Large_Language_Models'
+os.environ['HF_HOME'] = '/datasets/Large_Language_Models'
 from llmtuner import export_model
 
 
