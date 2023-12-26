@@ -309,5 +309,15 @@
       "history": "history"
     },
     "ranking": true
+  },
+  "apr_rm_test": {
+    "file_name": "apr_rm_test.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "history": "history"
+    },
+    "ranking": true
   }
 }
